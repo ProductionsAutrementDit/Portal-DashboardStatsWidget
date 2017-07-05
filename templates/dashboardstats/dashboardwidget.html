@@ -1,0 +1,40 @@
+{% themeextends "dashboard/base_widget.html" %}
+{% block widget_content %}
+
+    <style>
+      .dashboard-widget .dashboardstats .column {
+        float: left;
+        text-align: center;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1em;
+      }
+      .dashboard-widget .dashboardstats .number {
+        display: block;
+        font-size: 3em;
+        font-weight: bold;
+      }
+      
+    </style>
+
+    {% if error %}
+        <div class="errormessage">
+            <p>{{ error }}</p>
+        </div>
+    {% endif %}
+    
+    <div class="dashboardstats">
+    
+      <div class="count column">
+        <span class="number">{{count}}</span>
+        <span class="suffix">items</span>
+      </div>
+  
+      <div class="duration column">
+        <span class="number">{{duration}}</span>
+        <span class="suffix">total duration</span>
+      </div>
+
+    </div>
+
+{% endblock widget_content %}
