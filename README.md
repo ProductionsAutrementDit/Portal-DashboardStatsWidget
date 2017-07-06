@@ -7,7 +7,7 @@ Copy this folder to your Portal plugins folder (`/opt/cantemo/portal/portal/plug
 Then launch these commands:
 ```
 cd /opt/cantemo/portal
-./manage.py makemigrations dashboardstats --initials
+./manage.py makemigrations dashboardstats --initial
 ./manage.py migrate
 supervisorctl restart portal
 ```
