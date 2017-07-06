@@ -1,6 +1,8 @@
 # Portal-DashboardStatsWidget
 Add a widget for Cantemo Portal dashboard showing stats from Saved Searches
 
+![Sample image](https://github.com/ProductionsAutrementDit/Portal-DashboardStatsWidget/blob/master/samples/sample.png)
+
 ### Installation
 Copy this folder to your Portal plugins folder (`/opt/cantemo/portal/portal/plugins`).
 
